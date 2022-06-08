@@ -1,0 +1,259 @@
+#root {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .header {
+    background-color: #1790c7;
+    margin-bottom: 16px;
+    padding: 8px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .header .title {
+    margin: 0;
+  }
+  
+  .header .setting-btn {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 24px;
+    line-height: 60px;
+  }
+  
+  .setting-btn ul {  
+    list-style-type: none;
+  }
+  
+  .header .setting-btn:hover .setting-list {
+    display: inline-block;
+  }
+  
+  .setting-list {
+    /* background-color: #1790c7; */
+    opacity: 0.7;
+    margin-right: 4px;
+  }
+  
+  .setting-list li {
+    top: 76px;
+    position: absolute;
+    right: 4px;
+  }
+  
+  .setting-list h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  
+  
+  
+  
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: inline-block;
+  }
+  @media (min-width: 992px) {
+    
+  .App {
+    /* display: flex; */
+    width: 100%;
+    /* display: inline-block; */
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  
+  
+  .setting-list {
+    display: block;
+  }
+  
+  .staff-name-container {
+    border-bottom: 1px solid black;
+    position: relative;
+    
+  }
+  
+  .staff-list {
+    list-style-type: none;
+    padding-left: 12px;
+  }
+  
+  .staff-list .staff-name {
+    border: 2px solid grey;
+    border-radius: 3px;
+    margin-bottom: 4px;
+    margin-right: 8px;
+  }
+  
+  .toogle-add-btn {
+    position: absolute;
+    bottom: 12px;
+    right: 22px;
+    width: 75px;
+    height: 40px;
+    background-color: rgb(91, 148, 223);
+  }
+  
+  .toogle-edit-btn {
+    width: 75px;
+    height: 40px;
+    margin-right: 12px;
+    background-color: rgb(91, 148, 223);
+    align-items: center;
+  }
+  
+  .toogle-delete-btn {
+    width: 75px;
+    height: 40px;
+    background-color: rgb(91, 148, 223);
+  }
+  
+  .setting-btn {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .setting-list li {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+  }
+  }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .App {
+      /* display: flex; */
+      width: 100%;
+      /* display: inline-block; */
+      align-items: flex-start;
+      position: relative;
+    }
+  
+    .setting-btn ul {
+      display: none;
+    }
+  
+    .setting-list {
+      display: none;
+    }
+    
+    .staff-name-container {
+      border-bottom: 1px solid black;
+      position: relative;
+      
+    }
+    
+    .staff-list {
+      list-style-type: none;
+      padding-left: 12px;
+      display: flex;
+    }
+    
+    .staff-list .staff-name {
+      border: 2px solid grey;
+      border-radius: 3px;
+      margin-bottom: 4px;
+      margin-right: 8px;
+      width: 32%;
+      font-size: 15px;
+    }
+    
+    .toogle-add-btn {
+      position: absolute;
+      bottom: 12px;
+      right: 22px;
+      width: 75px;
+      height: 32px;
+      background-color: rgb(91, 148, 223);
+    }
+    
+    .toogle-edit-btn {
+      width: 75px;
+      height: 40px;
+      margin-right: 12px;
+      background-color: rgb(91, 148, 223);
+      align-items: center;
+    }
+    
+    .toogle-delete-btn {
+      width: 75px;
+      height: 40px;
+      background-color: rgb(91, 148, 223);
+    }
+    
+   
+  
+    .setting-list li {
+      width: 150px;
+      list-style-type: none;
+    }
+  
+    .setting-list h5 {    
+      font-size: 16px;    
+      padding-right: 4px;
+    }
+  
+    #displayCol {
+      font-size: 16px;
+      width: 60px;
+  
+    }
+    
+  }
+  @media (max-width: 767px) {
+    .header {
+      height: 44px;
+    }
+  
+    .header .title {
+      text-align: center;
+      font-size: 20px;
+    }
+  
+    .header ul {
+      list-style-type: none;
+    }
+  
+    .setting-btn  ul {
+      display: none;
+    }
+  
+    .setting-btn .setting-list {
+      display: none;
+    }
+  
+    .staff-name-container {
+      text-align: center;
+      border-bottom: 1px solid black;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+    }
+  
+    .staff-name-container .staff-list {
+      list-style-type: none;
+      width: 98%;
+    }
+  
+    .staff-list .staff-name {
+      border: 2px solid grey;
+      border-radius: 3px;
+      margin-bottom: 4px;
+      margin-right: 4px;
+    }
+  
+    .toogle-add-btn,
+    .toogle-edit-btn,
+    .toogle-delete-btn {
+      background-color: #1790c7;
+    }
+    .toogle-edit-btn {
+      margin-right: 8px;
+    }
+  
+  }
